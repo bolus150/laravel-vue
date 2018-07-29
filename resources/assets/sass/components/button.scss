@@ -12,8 +12,9 @@
   margin: 0 .25em 0 0;
   padding: .78571429em 1.5em .78571429em;
   font-weight: 700;
-  border-radius: .28571429rem;
   text-decoration: none;
+  border: 1px solid transparent;
+
   &__primary
   {
     background-color: $brand-primary;
@@ -23,16 +24,58 @@
     {
       padding: 5px 10px;
     }
+    &:hover
+    {
+      opacity: 0.7;
+      transition: opacity .5s ease-out;
+      -moz-transition: opacity .5s ease-out;
+      -webkit-transition: opacity .5s ease-out;
+      -o-transition: opacity .5s ease-out;
+      border: 1px solid darken($brand-primary, 10%);
+    }
   }
   &__success {
     background-color: $brand-success;
     color: $color-white;
     text-shadow: none;
+    &:hover
+    {
+      opacity: 0.7;
+      transition: opacity .5s ease-out;
+      -moz-transition: opacity .5s ease-out;
+      -webkit-transition: opacity .5s ease-out;
+      -o-transition: opacity .5s ease-out;
+      border: 1px solid darken($brand-success, 10%);
+    }
   }
   &__negative
   {
     background-color: $brand-danger;
     color: $color-white;
     text-shadow: none;
+    &:hover
+    {
+      opacity: 0.7;
+      transition: opacity .5s ease-out;
+      -moz-transition: opacity .5s ease-out;
+      -webkit-transition: opacity .5s ease-out;
+      -o-transition: opacity .5s ease-out;
+      border: 1px solid darken($brand-danger, 10%);
+    }
+  }
+  &__default
+  {
+    background-color: $brand-default ;
+    color: $color-black;
+    text-shadow: none;
+    &:hover
+    {
+      opacity: 0.7;
+      transition: opacity .5s ease-out;
+      -moz-transition: opacity .5s ease-out;
+      -webkit-transition: opacity .5s ease-out;
+      -o-transition: opacity .5s ease-out;
+      border: 1px solid darken($brand-default, 30%);
+    }
   }
 }

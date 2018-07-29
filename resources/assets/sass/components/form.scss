@@ -23,13 +23,12 @@
     }
     &:focus
     {
-      border-color: #f06d06;
+      border-color: darken($brand-primary, 10%);
     }
     &:focus + label
     {
-      background: #f06d06;
+      background: $brand-primary;
       color: $color-white;
-      font-size: 70%;
       padding: 1px 6px;
       z-index: 2;
       text-transform: uppercase;

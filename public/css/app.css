@@ -6,16 +6,16 @@
 }
 
 .message__success {
-  border: 1px solid  #badbad;
+  border: 1px solid #2ab27b;
   background-color: #fff;
   color: #2ab27b;
   padding: 10px;
 }
 
 .message__error {
-  border: 1px solid #badbad;
+  border: 1px solid #d9534f;
   background-color: #fff;
-  color: #bf5329;
+  color: #d9534f;
   padding: 10px;
 }
 
@@ -42,13 +42,12 @@
 }
 
 .form__input:focus {
-  border-color: #f06d06;
+  border-color: #2579a9;
 }
 
 .form__input:focus + label {
-  background: #f06d06;
+  background: #3097D1;
   color: #fff;
-  font-size: 70%;
   padding: 1px 6px;
   z-index: 2;
   text-transform: uppercase;
@@ -95,8 +94,8 @@
   margin: 0 .25em 0 0;
   padding: .78571429em 1.5em .78571429em;
   font-weight: 700;
-  border-radius: .28571429rem;
   text-decoration: none;
+  border: 1px solid transparent;
 }
 
 .btn__primary {
@@ -109,16 +108,58 @@
   padding: 5px 10px;
 }
 
+.btn__primary:hover {
+  opacity: 0.7;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+  border: 1px solid #2579a9;
+}
+
 .btn__success {
   background-color: #2ab27b;
   color: #fff;
   text-shadow: none;
 }
 
+.btn__success:hover {
+  opacity: 0.7;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+  border: 1px solid #20895e;
+}
+
 .btn__negative {
-  background-color: #bf5329;
+  background-color: #d9534f;
   color: #fff;
   text-shadow: none;
+}
+
+.btn__negative:hover {
+  opacity: 0.7;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+  border: 1px solid #c9302c;
+}
+
+.btn__default {
+  background-color: #DDD;
+  color: #000;
+  text-shadow: none;
+}
+
+.btn__default:hover {
+  opacity: 0.7;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+  border: 1px solid #919090;
 }
 
 .header {
@@ -152,7 +193,6 @@
 
 .panel {
   border: 1px solid #8eb4cb;
-  border-radius: 5px;
 }
 
 .panel__header {
@@ -183,7 +223,7 @@
 }
 
 .table__head--negative {
-  background-color: #bf5329;
+  background-color: #d9534f;
 }
 
 body {

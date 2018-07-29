@@ -25,7 +25,7 @@
                         <div v-if="errors.has('birth')" class="message message__error">@{{ errors.first('birth') }}</div>
                     </div>
 
-                    <button type="submit" class="btn" v-bind:class="[ button_class ]">Save</button>
+                    <button type="submit" class="btn btn__default" v-bind:class="[ button_class ]">Save</button>
                 </form>
             </div>
         </edit_profile>

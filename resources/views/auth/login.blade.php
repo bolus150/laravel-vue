@@ -11,18 +11,18 @@
                 {{ csrf_field() }}
 
                 <div class="form__group">
-                    <input id="email" type="email" class="form__input" name="email" value="{{ old('email') }}" required autofocus>
+                    <input id="email" type="email" class="form__input" name="email" value="{{ old('email') }}" required autofocus autocomplete="off">
                     <label for="email" class="form__label">E-Mail Address</label>
 
                     @if ($errors->has('email'))
-                        <span class="message message__error">
+                        <div class="message message__error">
                             <strong>{{ $errors->first('email') }}</strong>
-                        </span>
+                        </div>
                     @endif
                 </div>
 
                 <div class="form__group">
-                    <input id="password" type="password" class="form__input" name="password" required>
+                    <input id="password" type="password" class="form__input" name="password" required autocomplete="off">
                     <label for="password" class="form__label">Password</label>
 
                     @if ($errors->has('password'))
