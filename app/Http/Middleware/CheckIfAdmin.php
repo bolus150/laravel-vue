@@ -17,7 +17,6 @@ class CheckIfAdmin
     public function handle($request, Closure $next)
     {
         if ( Auth::guest() || !Auth::user()->role ) {
-            Auth::guard()->logout();
             return redirect('/admin/login');
         }
 
