@@ -4,7 +4,7 @@
 <div class="container">
     <div class="panel mt-10">
         <div class="panel__header">
-            Logowanie
+            Login
         </div>
         <div class="panel__body">
             <form class="form" method="POST" action="/login">
