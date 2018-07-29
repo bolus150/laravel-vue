@@ -27,8 +27,8 @@ window.axios.defaults.headers.common = {
     'X-Requested-With': 'XMLHttpRequest'
 };
 
-// Vue.config.productionTip = true;
-Vue.config.productionTip = false;
+Vue.config.productionTip = true;
+// Vue.config.productionTip = false;
 
 const app = new Vue({
     el: '#app',
