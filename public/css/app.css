@@ -172,10 +172,21 @@
   float: right;
 }
 
+@media (min-width: 768px) {
+  .header__logo {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__logo {
+    width: 30%;
+  }
+}
+
 .header__logo {
   float: left;
   left: 0;
-  width: 50%;
   font-family: 'Abel', sans-serif;
   text-transform: none;
   font-size: 25px;
@@ -183,7 +194,7 @@
 
 .header__logo--sub-logo {
   margin-left: 50px;
-  font-size: 20px;
+  font-size: 2rem;
   padding: 0 5px;
 }
 

@@ -25,7 +25,7 @@
                 </a>
             </div>
             @if (Route::has('login'))
-                <div class="header__links--right">
+                <div class="header__links--right mt-10">
                     @if (Auth::check())
                         @if (Auth::user()->isAdmin())
                             <a class="btn btn__primary" href="{{url('/admin')}}">Admin panel</a>
