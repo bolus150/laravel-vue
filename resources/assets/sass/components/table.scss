@@ -1,0 +1,14 @@
+.table {
+  width: 100%;
+ &__head {
+   background-color: #f2f2f2;
+   &--primary {
+     color: #fff;
+     background-color: #1678c2;
+   }
+   &--negative {
+     color: #fff;
+     background-color: #fd0700;
+   }
+ }
+}

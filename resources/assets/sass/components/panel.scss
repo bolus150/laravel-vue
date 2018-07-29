@@ -1,0 +1,11 @@
+.panel {
+  border:1px solid #dddddd;
+  border-radius: 5px;
+  &__header {
+    border-bottom: 1px solid #dddddd;
+    padding:10px;
+  }
+  &__body {
+    padding:10px ;
+  }
+}

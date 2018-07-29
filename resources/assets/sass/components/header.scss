@@ -1,0 +1,18 @@
+.header
+{
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+  &__logo
+  {
+    float: left;
+    left:0;
+    width: 50%;
+  }
+  &__links
+  {
+    &--right
+    {
+      float: right;
+    }
+  }
+}

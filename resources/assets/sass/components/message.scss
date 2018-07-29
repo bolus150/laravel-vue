@@ -1,0 +1,18 @@
+.message {
+  padding:10px;
+  width:100%;
+  border-radius: 2px;
+  margin: 10px 0;
+  &__success {
+    border: 1px solid  #bad2ad;
+    background-color: #fcfff5;
+    color: #4c7e4c;
+    padding:10px;
+  }
+  &__error {
+    border: 1px solid #e9c7c7;
+    background-color: #fff6f6;
+    color: #a34e4c;
+    padding:10px;
+  }
+}
