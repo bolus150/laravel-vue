@@ -27,10 +27,14 @@
             @if (Route::has('login'))
                 <div class="header__links--right">
                     @if (Auth::check())
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                        @if (Auth::user()->isAdmin())
+                            <a class="btn btn__primary" href="{{url('/admin')}}">Admin panel</a>
+                        @endif
+                        <form class="f-right" action="{{ route('logout') }}" method="POST">
                             {{ csrf_field() }}
                             <button class="btn btn__primary">Logout</button>
                         </form>
+                        <div class="clear"></div>
                     @else
                         <a href="{{ url('/login') }}" class="btn btn__primary">Login</a>
                     @endif
