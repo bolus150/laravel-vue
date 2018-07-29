@@ -19,7 +19,7 @@
     outline: 0;
     &:valid {
       // Hides the label
-      background: white;
+      background: $color-white;
     }
     &:focus
     {
@@ -28,7 +28,7 @@
     &:focus + label
     {
       background: #f06d06;
-      color: white;
+      color: $color-white;
       font-size: 70%;
       padding: 1px 6px;
       z-index: 2;

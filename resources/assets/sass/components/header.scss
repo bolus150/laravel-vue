@@ -1,18 +1,33 @@
 .header
 {
   padding: 10px;
-  border-bottom: 1px solid #dddddd;
-  &__logo
-  {
-    float: left;
-    left:0;
-    width: 50%;
-  }
+  border-bottom: 1px solid $brand-info;
   &__links
   {
     &--right
     {
       float: right;
     }
+  }
+  &__logo
+  {
+    float: left;
+    left:0;
+    width: 50%;
+    font-family: 'Abel', sans-serif;
+    text-transform: none;
+    font-size: 25px;
+    &--sub-logo {
+      margin-left: 50px;
+      font-size: 20px;
+      padding: 0 5px;
+    }
+
+    &--link
+    {
+      text-decoration: none;
+      color: $color-black;
+    }
+
   }
 }

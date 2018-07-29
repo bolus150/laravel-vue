@@ -42,9 +42,10 @@
                             _self.button_class = 'btn__negative';
                             _self.message = "An error occured! Refresh the page";
                         });
+                        _self.setNormalButton();
+                    } else {
                     }
                 });
-                this.setNormalButton();
             },
             setNormalButton() {
                 var _self = this;

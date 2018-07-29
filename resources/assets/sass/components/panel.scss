@@ -1,9 +1,14 @@
 .panel {
-  border:1px solid #dddddd;
+  border:1px solid $brand-info;
   border-radius: 5px;
   &__header {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid $brand-info;
     padding:10px;
+    &--primary
+    {
+      color: $color-white;
+      background-color: $brand-primary;
+    }
   }
   &__body {
     padding:10px ;

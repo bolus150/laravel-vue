@@ -7,7 +7,9 @@
                 <li><a href="{{ route('login') }}">Login</a></li>
             </ul>
         @else
-            @include('Web.profile.edit_profile')
+            <div class="container">
+                @include('Web.profile.edit_profile')
+            </div>
         @endif
     </div>
 @endsection

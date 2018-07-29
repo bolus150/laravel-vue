@@ -43274,9 +43274,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         _self.button_class = 'btn__negative';
                         _self.message = "An error occured! Refresh the page";
                     });
-                }
+                    _self.setNormalButton();
+                } else {}
             });
-            this.setNormalButton();
         },
         setNormalButton: function setNormalButton() {
             var _self = this;

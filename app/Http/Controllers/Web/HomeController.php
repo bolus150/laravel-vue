@@ -24,6 +24,6 @@ class HomeController extends WebController
      */
     public function index()
     {
-        return view('web.home');
+        return view('Web.home');
     }
 }

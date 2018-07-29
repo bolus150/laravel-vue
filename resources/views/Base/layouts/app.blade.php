@@ -12,12 +12,18 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body>
     <div id="app">
         <header class="header">
-            <div class="header__logo">LOGO</div>
+            <div class="header__logo">
+                <a href="/" class="header__logo--link">
+                    &lt;karol_piekarski/&gt;
+                    <div class="header__logo--sub-logo">
+                        {web_developer}
+                    </div>
+                </a>
+            </div>
             @if (Route::has('login'))
                 <div class="header__links--right">
                     @if (Auth::check())
@@ -26,7 +32,7 @@
                             <button class="btn btn__primary">Logout</button>
                         </form>
                     @else
-                        <a href="{{ url('/login') }}" class="btn btn__primary btn__primary--small">Login</a>
+                        <a href="{{ url('/login') }}" class="btn btn__primary">Login</a>
                     @endif
                 </div>
             @endif
@@ -39,6 +45,5 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </body>
 </html>

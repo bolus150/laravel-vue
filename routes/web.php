@@ -19,6 +19,7 @@ Route::prefix('admin')->group(function () {
 });
 
 Route::get('/', 'Web\HomeController@index');
+Route::get('/home', 'Web\HomeController@index');
 Route::get('/profile', 'Web\ProfileController@index');
 Route::post('/profile/update/{id}', 'Web\ProfileController@update');
 

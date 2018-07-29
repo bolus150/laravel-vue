@@ -4,15 +4,15 @@
   border-radius: 2px;
   margin: 10px 0;
   &__success {
-    border: 1px solid  #bad2ad;
-    background-color: #fcfff5;
-    color: #4c7e4c;
+    border: 1px solid  #badbad;
+    background-color: $color-white;
+    color: $brand-success;
     padding:10px;
   }
   &__error {
-    border: 1px solid #e9c7c7;
-    background-color: #fff6f6;
-    color: #a34e4c;
+    border: 1px solid #badbad;
+    background-color: $color-white;
+    color: $brand-danger;
     padding:10px;
   }
 }

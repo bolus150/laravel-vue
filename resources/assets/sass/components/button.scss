@@ -7,7 +7,7 @@
   border: none;
   vertical-align: baseline;
   background: #e0e1e2 none;
-  color: rgba(0,0,0,.6);
+  color: $color-black;
   font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
   margin: 0 .25em 0 0;
   padding: .78571429em 1.5em .78571429em;
@@ -16,8 +16,8 @@
   text-decoration: none;
   &__primary
   {
-    background-color: #1678c2;
-    color: #fff;
+    background-color: $brand-primary;
+    color: $color-white;
     text-shadow: none;
     &--small
     {
@@ -25,14 +25,14 @@
     }
   }
   &__success {
-    background-color: #16ab39;
-    color: #fff;
+    background-color: $brand-success;
+    color: $color-white;
     text-shadow: none;
   }
   &__negative
   {
-    background-color: #db2828;
-    color: #fff;
+    background-color: $brand-danger;
+    color: $color-white;
     text-shadow: none;
   }
 }
